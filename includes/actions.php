@@ -206,14 +206,14 @@ function ppp_facebook_post_search() {
 
 		$items[] = array(
 			'id'   => 0,
-			'name' => __( 'No results found' )
+			'name' => __( 'No results found', 'ppp-facebook-txt' )
 		);
 
 	}
 
 	echo json_encode( $results );
 
-	wp_die();
+	wp_die();// replaced edd_die with wp_die
 }
 add_action( 'wp_ajax_ppp_facebook_post_search', 'ppp_facebook_post_search' );
 add_action( 'wp_ajax_nopriv_ppp_facebook_post_search', 'ppp_facebook_post_search' );

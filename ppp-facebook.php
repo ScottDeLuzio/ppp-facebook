@@ -4,8 +4,7 @@ Plugin Name: Post Promoter Pro - Facebook
 Plugin URI: https://www.postpromoterpro.com
 Description: Schedule your Facebook Posts
 Version: 1.0
-Author: Chris Klosowski
-Author URI: http://www.kungfugrep.com
+Author: Chris Klosowski, Scott DeLuzio
 License: GPLv2 or later
 */
 
@@ -49,7 +48,7 @@ class PPP_Facebook_Posts {
 	 * @return void
 	 */
 	public function ppp_not_present() {
-		echo '<div class="error"><p>' . __( 'Post Promoter Pro - Facebook requires Post Promoter Pro. Please activate it and enable Facebook.', 'ppp-gs-text' ) . '</p></div>';
+		echo '<div class="error"><p>' . __( 'Post Promoter Pro - Facebook requires Post Promoter Pro. Please activate it and enable Facebook.', 'ppp-facebook-txt' ) . '</p></div>';
 	}
 
 	/**

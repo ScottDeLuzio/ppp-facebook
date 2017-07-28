@@ -38,7 +38,7 @@ function ppp_facebook_post_type() {
 		'map_meta_cap'        => true,
 		'has_archive'         => false,
 		'hierarchical'        => false,
-		'exclude_from_search' => false,
+		'exclude_from_search' => true, // changed to true to avoid FB posts from showing up in chosen menu
 		'supports'            => apply_filters( 'ppp_facebook_supports', array( 'title', 'thumbnail' ) )
 	);
 	register_post_type( 'ppp_facebook', apply_filters( 'ppp_facebook_post_args', $posts_args  ) );
